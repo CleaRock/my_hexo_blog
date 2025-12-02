@@ -1,0 +1,480 @@
+Sep 28 05:03:24 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 121.[0m
+Sep 28 05:03:25 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 121.[0m
+Oct 14 03:21:25 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 84979.[0m
+Oct 14 05:36:04 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86275.[0m
+Oct 14 05:36:04 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Oct 14 05:36:04 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86275 and the job result is done.[0m
+Oct 14 06:01:09 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86446.[0m
+Oct 14 06:01:09 vultr nginx[3085154]: nginx: [warn] conflicting server name "4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:01:09 vultr nginx[3085154]: nginx: [warn] conflicting server name "www.4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:01:09 vultr nginx[3085155]: nginx: [warn] conflicting server name "4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:01:09 vultr nginx[3085155]: nginx: [warn] conflicting server name "www.4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:01:09 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86446.[0m
+Oct 14 06:05:11 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86697.[0m
+Oct 14 06:05:11 vultr nginx[3086263]: nginx: [warn] conflicting server name "4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:05:11 vultr nginx[3086263]: nginx: [warn] conflicting server name "www.4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:05:11 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86697 and the job result is done.[0m
+Oct 14 06:07:03 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86698.[0m
+Oct 14 06:07:03 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86698 and the job result is done.[0m
+Oct 14 06:14:16 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86782.[0m
+Oct 14 06:14:16 vultr nginx[3087552]: nginx: [warn] conflicting server name "4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:14:16 vultr nginx[3087552]: nginx: [warn] conflicting server name "www.4thjunji.com" on 0.0.0.0:80, ignored
+Oct 14 06:14:16 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86782 and the job result is done.[0m
+Oct 14 06:15:11 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86783.[0m
+Oct 14 06:15:11 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86783 and the job result is done.[0m
+Oct 14 06:18:31 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86784.[0m
+Oct 14 06:18:31 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86784 and the job result is done.[0m
+Oct 14 06:21:01 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86785.[0m
+Oct 14 06:21:01 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86785 and the job result is done.[0m
+Oct 14 06:21:07 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86786.[0m
+Oct 14 06:21:07 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86786 and the job result is done.[0m
+Oct 14 06:35:46 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86787.[0m
+Oct 14 06:35:46 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 86787 and the job result is done.[0m
+Nov 07 09:46:52 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 219666.[0m
+Nov 07 09:46:53 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 07 09:46:53 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 219666 and the job result is done.[0m
+Nov 07 09:46:53 vultr systemd[1]: nginx.service: Consumed 9.193s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service completed and consumed the indicated resources.[0m
+[0;1;39m-- Boot 8a7cc3496e744fe9b84b3fa417174450 --[0m
+Nov 07 09:47:24 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 158.[0m
+Nov 07 09:47:25 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 158.[0m
+Nov 19 06:28:46 vultr systemd[1]: Reloading A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 70670.[0m
+Nov 19 06:28:46 vultr systemd[1]: Reloaded A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A reload job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA reload job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 70670 and the job result is done.[0m
+Nov 19 11:27:15 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73022.[0m
+Nov 19 11:27:15 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 19 11:27:15 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73022 and the job result is done.[0m
+Nov 19 11:27:15 vultr systemd[1]: nginx.service: Consumed 3.124s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service completed and consumed the indicated resources.[0m
+Nov 19 11:27:15 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73022.[0m
+Nov 19 11:27:15 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73022.[0m
+Nov 19 11:28:58 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73105.[0m
+Nov 19 11:28:58 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 19 11:28:58 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73105 and the job result is done.[0m
+Nov 19 11:28:58 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73105.[0m
+Nov 19 11:28:58 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73105.[0m
+Nov 19 11:32:18 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73188.[0m
+Nov 19 11:32:18 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 19 11:32:18 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73188 and the job result is done.[0m
+Nov 19 11:32:18 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73188.[0m
+Nov 19 11:32:18 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73188.[0m
+Nov 19 11:34:34 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73271.[0m
+Nov 19 11:34:34 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 19 11:34:34 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73271 and the job result is done.[0m
+Nov 19 11:34:34 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73271.[0m
+Nov 19 11:34:34 vultr systemd[1]: Started A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73271.[0m
+Nov 19 11:41:02 vultr systemd[1]: Stopping A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73437.[0m
+Nov 19 11:41:02 vultr systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Nov 19 11:41:02 vultr systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73437 and the job result is done.[0m
+Nov 19 11:41:02 vultr systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73437.[0m
+Nov 19 11:41:02 vultr nginx[2320910]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+Nov 19 11:41:02 vultr nginx[2320910]: nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+Nov 19 11:41:03 vultr nginx[2320910]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+Nov 19 11:41:03 vultr nginx[2320910]: nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+Nov 19 11:41:03 vultr nginx[2320910]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+Nov 19 11:41:03 vultr nginx[2320910]: nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+Nov 19 11:41:04 vultr nginx[2320910]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+Nov 19 11:41:04 vultr nginx[2320910]: nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+Nov 19 11:41:04 vultr nginx[2320910]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+Nov 19 11:41:04 vultr nginx[2320910]: nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+Nov 19 11:41:05 vultr nginx[2320910]: nginx: [emerg] still could not bind()
+Nov 19 11:41:05 vultr systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit nginx.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+Nov 19 11:41:05 vultr systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has entered the 'failed' state with result 'exit-code'.[0m
+Nov 19 11:41:05 vultr systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 73437 and the job result is failed.[0m
