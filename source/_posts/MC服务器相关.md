@@ -5,38 +5,27 @@ tags:
 ---
 
 <div style="
-  width:100%;
-  padding:28px 20px;
-  border-radius:18px;
-  background:linear-gradient(135deg, #3b4252, #4c566a, #5e81ac);
   display:flex;
   align-items:center;
-  justify-content:center;
-  gap:16px;
+  gap:20px;
+  padding:20px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#3b4252,#4c566a,#5e81ac);
   color:white;
-  font-weight:800;
-  font-size:2rem;
-  letter-spacing:1px;
-  box-shadow:0 8px 28px rgba(0,0,0,.28);
-  backdrop-filter:blur(6px);
-  margin-bottom:30px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.3);
+  margin-bottom:25px;
 ">
-  <img src="/images/4thjunji.png"
-       width="32"
-       style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
-  <img src="/images/create.png"
-       width="32"
-       style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
 
-  <span style="
-    text-shadow:0 4px 10px rgba(0,0,0,.35);
-    padding:4px 12px;
-  ">
-    4thjunji 齿轮盛宴服务器<br>
-    Create Delight Remake<br>
-    上线公告
-  </span>
-  
+  <!-- 左侧竖排 Logo -->
+  <div style="display:flex; flex-direction:column; align-items:center; gap:14px;">
+      <img src="/images/4thjunji.png" width="80" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
+      <img src="/images/create.png" width="80" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
+  </div>
+
+  <!-- 右侧标题 -->
+  <div style="font-size:2rem;font-weight:800;text-shadow:0 4px 10px rgba(0,0,0,.4);">
+    4thjunji 齿轮盛宴服务器<br>（Create Delight Remake）上线公告
+  </div>
 
 </div>
 
