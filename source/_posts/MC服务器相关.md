@@ -60,15 +60,42 @@ tags:
 
 ## 📡 当前服务器状态（手动更新）
 
-
-<div id="mc-status" style="
-  padding:12px;
-  border-left:5px solid #4CAF50;
-  background:#f7f7f7;
+<div id="mc-status-card" style="
+  padding:20px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#2e3440,#4c566a);
+  color:white;
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-size:1rem;
+  line-height:1.7;
+  border-left:6px solid #4caf50;
   margin-bottom:20px;
 ">
-正在检测服务器状态……
+    <div style="font-size:1.4rem;font-weight:800;display:flex;align-items:center;gap:8px;">
+      <span id="mc-state-icon" style="font-size:1.4rem;">⏳</span> 
+      <span>MC 服务器状态</span>
+    </div>
+    <div id="mc-status-content">
+      正在检测 mc.4thjunji.cn 的服务器状态…
+    </div>
+    <!-- 玩家列表容器（新增） -->
+    <div id="mc-player-list" style="
+      margin-top:10px;
+      padding:12px;
+      background:rgba(255,255,255,0.08);
+      border-radius:10px;
+      display:none;
+    ">
+    </div>
+    <div id="mc-update-time" style="font-size:0.9rem;opacity:0.7;">
+      最后检测：正在检测…
+    </div>
 </div>
+
+
 
 
 
@@ -303,37 +330,61 @@ ElysiumAPI
 <script>
 async function updateMCStatus() {
   const ip = "mc.4thjunji.cn";
-  const port = 25565; // 如非默认端口，请改成实际端口
+  const port = 25565;
 
   const api = `https://api.mcsrvstat.us/2/${ip}:${port}`;
   const res = await fetch(api);
   const data = await res.json();
-  const box = document.getElementById("mc-status");
+
+  const card = document.getElementById("mc-status-card");
+  const icon = document.getElementById("mc-state-icon");
+  const content = document.getElementById("mc-status-content");
+  const playerBox = document.getElementById("mc-player-list");
+  const time = document.getElementById("mc-update-time");
+
+  const now = new Date().toLocaleString();
 
   if (!data.online) {
-    box.innerHTML = `
+    icon.innerText = "🔴";
+    card.style.borderLeftColor = "#e53935";
+    content.innerHTML = `
       <b>服务器状态：</b> 离线 ❌<br>
-      <b>检测时间：</b> ${new Date().toLocaleString()}
+      <b>可能原因：</b> 维护中 / 崩溃 / 离线
     `;
-    box.style.borderLeftColor = "#f44336";
+    playerBox.style.display = "none";
+    time.innerHTML = `最后检测：${now}`;
     return;
   }
 
-  box.innerHTML = `
+  icon.innerText = "🟢";
+  card.style.borderLeftColor = "#4caf50";
+
+  content.innerHTML = `
     <b>服务器状态：</b> 在线 ✔<br>
     <b>MOTD：</b> ${data.motd?.clean?.join(" ") || "未知"}<br>
     <b>版本：</b> ${data.version || "未知"}<br>
-    <b>在线人数：</b> ${data.players?.online || 0} / ${data.players?.max || 0}<br>
-    <b>检测时间：</b> ${new Date().toLocaleString()}
+    <b>在线人数：</b> ${data.players?.online || 0} / ${data.players?.max || 0}
   `;
 
-  box.style.borderLeftColor = "#4CAF50";
+  // 处理玩家列表
+  const players = data.players?.list || [];
+
+  if (players.length > 0) {
+    playerBox.style.display = "block";
+    playerBox.innerHTML = `
+      <b>在线玩家：</b><br>
+      ${players.map(name => `🧑‍🎮 ${name}`).join('<br>')}
+    `;
+  } else {
+    playerBox.style.display = "none";
+  }
+
+  time.innerHTML = `最后检测：${now}`;
 }
 
-// 第一次加载时执行
+// 初次加载
 updateMCStatus();
 
-// 如需每 15 秒自动刷新，请取消下一行注释
-// setInterval(updateMCStatus, 15000);
+// 每 20 秒自动刷新
+setInterval(updateMCStatus, 20000);
 </script>
-
