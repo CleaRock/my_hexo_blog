@@ -22,14 +22,10 @@ tags:
   margin-bottom:30px;
 ">
   <img src="/images/4thjunji.png"
-       width="64"
+       width="32"
        style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
   </div>
 
-  <img src="/images/create.png"
-       width="64"
-       style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
-  </div>  
   <span style="
     text-shadow:0 4px 10px rgba(0,0,0,.35);
     padding:4px 12px;
@@ -40,7 +36,7 @@ tags:
   </span>
   
   <img src="/images/create.png"
-       width="64"
+       width="32"
        style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
 </div>
 
