@@ -18,13 +18,13 @@ tags:
 
   <!-- 左侧竖排 Logo -->
   <div style="display:flex; flex-direction:column; align-items:center; gap:14px;">
-      <img src="/images/4thjunji.png" width="80" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
-      <img src="/images/create.png" width="80" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
+      <img src="/images/4thjunji.png" width="32" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
+      <img src="/images/create.png" width="32" style="border-radius:12px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45));">
   </div>
 
   <!-- 右侧标题 -->
   <div style="font-size:2rem;font-weight:800;text-shadow:0 4px 10px rgba(0,0,0,.4);">
-    4thjunji 齿轮盛宴服务器<br>（Create Delight Remake）上线公告
+    4thjunji 齿轮盛宴整合包服务器<br>上线公告
   </div>
 
 </div>
