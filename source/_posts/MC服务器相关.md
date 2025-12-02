@@ -12,7 +12,7 @@ tags:
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:32px;
+  gap:16px;
   color:white;
   font-weight:800;
   font-size:2rem;
@@ -24,11 +24,12 @@ tags:
   <img src="/images/4thjunji.png"
        width="64"
        style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
+  </div>
+
   <img src="/images/create.png"
        width="64"
        style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
-</div>
-  
+  </div>  
   <span style="
     text-shadow:0 4px 10px rgba(0,0,0,.35);
     padding:4px 12px;
