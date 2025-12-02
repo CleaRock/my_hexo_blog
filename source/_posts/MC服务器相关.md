@@ -329,8 +329,8 @@ ElysiumAPI
 
 <script>
 async function updateMCStatus() {
-  const ip = mc.4thjunji.cn;
-  const port = 41762;
+  const ip = "mc.4thjunji.cn";
+  const port = 25565;
 
   const api = `https://api.mcsrvstat.us/2/${ip}:${port}`;
   const res = await fetch(api);
@@ -366,14 +366,28 @@ async function updateMCStatus() {
     <b>在线人数：</b> ${data.players?.online || 0} / ${data.players?.max || 0}
   `;
 
-  // 处理玩家列表
   const players = data.players?.list || [];
 
   if (players.length > 0) {
     playerBox.style.display = "block";
+
+    // 生成玩家头像+名字列表
     playerBox.innerHTML = `
       <b>在线玩家：</b><br>
-      ${players.map(name => `🧑‍🎮 ${name}`).join('<br>')}
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
+        ${players.map(name => `
+          <div style="display:flex;align-items:center;gap:12px;">
+            <img src="https://mineskin.eu/helm/${name}/64.png"
+                 style="
+                   width:38px;
+                   height:38px;
+                   border-radius:50%;
+                   box-shadow:0 2px 6px rgba(0,0,0,0.3);
+                 ">
+            <span>${name}</span>
+          </div>
+        `).join("")}
+      </div>
     `;
   } else {
     playerBox.style.display = "none";
@@ -385,6 +399,6 @@ async function updateMCStatus() {
 // 初次加载
 updateMCStatus();
 
-// 每 20 秒自动刷新
+// 自动刷新
 setInterval(updateMCStatus, 20000);
 </script>
