@@ -330,7 +330,7 @@ ElysiumAPI
 <script>
 async function updateMCStatus() {
   const ip = "mc.4thjunji.cn";
-  const port = 25565;
+  const port = 41762;
 
   const api = `https://api.mcsrvstat.us/2/${ip}:${port}`;
   const res = await fetch(api);
