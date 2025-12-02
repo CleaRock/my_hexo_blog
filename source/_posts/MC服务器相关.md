@@ -23,7 +23,11 @@ tags:
 ">
   <img src="/images/4thjunji.png"
        width="64"
+       style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;"><br>
+  <img src="/images/create.png"
+       width="64"
        style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); border-radius:12px;">
+</div>
   
   <span style="
     text-shadow:0 4px 10px rgba(0,0,0,.35);
