@@ -60,38 +60,42 @@ tags:
 
 ## 📡 当前服务器状态（手动更新）
 
-<div id="mc-status-card" style="
-  padding:20px;
-  border-radius:18px;
-  background:linear-gradient(135deg,#2e3440,#4c566a);
-  color:white;
-  box-shadow:0 6px 20px rgba(0,0,0,0.25);
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  font-size:1rem;
-  line-height:1.7;
-  border-left:6px solid #4caf50;
-  margin-bottom:20px;
-">
-    <div style="font-size:1.4rem;font-weight:800;display:flex;align-items:center;gap:8px;">
-      <span id="mc-state-icon" style="font-size:1.4rem;">⏳</span> 
-      <span>MC 服务器状态</span>
-    </div>
-    <div id="mc-status-content">
-      正在检测 mc.4thjunji.cn 的服务器状态…
-    </div>
-    <!-- 玩家列表容器（新增） -->
-    <div id="mc-player-list" style="
-      margin-top:10px;
-      padding:12px;
-      background:rgba(255,255,255,0.08);
-      border-radius:10px;
-      display:none;
-    ">
-    </div>
-    <div id="mc-update-time" style="font-size:0.9rem;opacity:0.7;">
-      最后检测：正在检测…
+<div class="mc-status-container" style="font-family: 'Segoe UI','Microsoft YaHei',sans-serif; max-width:1200px; margin:0 auto; padding:20px;">
+    <div style="background:#ffffff; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.1); overflow:hidden;">
+                <!-- 顶部标题 -->
+        <div style="background:#2c3e50; color:white; text-align:center; padding:25px;">
+            <h1 style="margin:0 0 8px 0; font-size:2rem;">Minecraft 服务器</h1>
+            <p style="margin:0; opacity:0.85;">mc.4thjunji.cn</p>
+        </div>
+        <div style="padding:30px;">
+            <!-- 状态指示 -->
+            <div style="display:flex; align-items:center; margin-bottom:25px;">
+                <div id="status-indicator" style="width:20px; height:20px; border-radius:50%; margin-right:15px; background:#f44336;"></div>
+                <p id="status-text" style="font-size:1.5rem; font-weight:500;">正在获取服务器状态...</p>
+            </div>
+            <!-- 三栏数据 -->
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:20px; margin-bottom:30px;">
+                <div style="background:#f8f9fa; border-radius:8px; padding:18px; text-align:center;">
+                    <div style="font-size:1rem; color:#666666; margin-bottom:10px; font-weight:500;">在线玩家</div>
+                    <div id="player-count" style="font-size:1.6rem; font-weight:700; color:#333333;">-</div>
+                </div>
+                <div style="background:#f8f9fa; border-radius:8px; padding:18px; text-align:center;">
+                    <div style="font-size:1rem; color:#666666; margin-bottom:10px; font-weight:500;">玩家上限</div>
+                    <div id="max-players" style="font-size:1.6rem; font-weight:700; color:#333333;">-</div>
+                </div>
+                <div style="background:#f8f9fa; border-radius:8px; padding:18px; text-align:center;">
+                    <div style="font-size:1rem; color:#666666; margin-bottom:10px; font-weight:500;">服务器版本</div>
+                    <div id="server-version" style="font-size:1.6rem; font-weight:700; color:#333333;">-</div>
+                </div>
+            </div>
+            <!-- 玩家列表 -->
+            <h2 style="font-size:1.5rem; color:#2c3e50; margin:30px 0 20px 0; padding-bottom:12px; border-bottom:2px solid #e0e6ed;">
+                在线玩家列表
+            </h2>
+            <div id="players-container">
+                <div style="text-align:center; padding:40px; font-size:1.2rem; color:#666666;">正在加载玩家数据...</div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -328,77 +332,75 @@ ElysiumAPI
 ---
 
 <script>
-async function updateMCStatus() {
-  const ip = mc.4thjunji.cn;
-  const port = 41762;
+document.addEventListener('DOMContentLoaded', function() {
+    const statusIndicator = document.getElementById('status-indicator');
+    const statusText = document.getElementById('status-text');
+    const playerCount = document.getElementById('player-count');
+    const maxPlayers = document.getElementById('max-players');
+    const serverVersion = document.getElementById('server-version');
+    const playersContainer = document.getElementById('players-container');
 
-  const api = `https://api.mcsrvstat.us/2/${ip}:${port}`;
-  const res = await fetch(api);
-  const data = await res.json();
+    function fetchServerStatus() {
+        fetch('https://mcapi.us/server/status?ip=mc.4thjunji.cn')
+            .then(response => response.json())
+            .then(data => {
+                if (data.online) {
+                    statusIndicator.style.background = '#4CAF50';
+                    statusText.innerText = '服务器在线';
+                    statusText.style.color = '#4CAF50';
 
-  const card = document.getElementById("mc-status-card");
-  const icon = document.getElementById("mc-state-icon");
-  const content = document.getElementById("mc-status-content");
-  const playerBox = document.getElementById("mc-player-list");
-  const time = document.getElementById("mc-update-time");
+                    playerCount.innerText = data.players.now;
+                    maxPlayers.innerText = data.players.max;
+                    serverVersion.innerText = data.server.name || "未知";
 
-  const now = new Date().toLocaleString();
+                    // 玩家列表
+                    if (data.players.now > 0 && data.players.sample) {
+                        playersContainer.innerHTML = '';
 
-  if (!data.online) {
-    icon.innerText = "🔴";
-    card.style.borderLeftColor = "#e53935";
-    content.innerHTML = `
-      <b>服务器状态：</b> 离线 ❌<br>
-      <b>可能原因：</b> 维护中 / 崩溃 / 离线
-    `;
-    playerBox.style.display = "none";
-    time.innerHTML = `最后检测：${now}`;
-    return;
-  }
+                        data.players.sample.forEach(player => {
+                            const avatarUrl = `https://crafatar.com/avatars/${player.id}?size=60&overlay`;
+                            const div = document.createElement('div');
+                            div.style.display = 'flex';
+                            div.style.alignItems = 'center';
+                            div.style.margin = '10px 0';
 
-  icon.innerText = "🟢";
-  card.style.borderLeftColor = "#4caf50";
+                            div.innerHTML = `
+                                <img src="${avatarUrl}" style="
+                                    width:50px;
+                                    height:50px;
+                                    border-radius:50%;
+                                    margin-right:15px;
+                                    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+                                ">
+                                <span style="font-size:1.1rem;">${player.name}</span>
+                            `;
 
-  content.innerHTML = `
-    <b>服务器状态：</b> 在线 ✔<br>
-    <b>MOTD：</b> ${data.motd?.clean?.join(" ") || "未知"}<br>
-    <b>版本：</b> ${data.version || "未知"}<br>
-    <b>在线人数：</b> ${data.players?.online || 0} / ${data.players?.max || 0}
-  `;
+                            playersContainer.appendChild(div);
+                        });
 
-  const players = data.players?.list || [];
+                    } else {
+                        playersContainer.innerHTML = '<div style="padding:20px; color:#777;">当前没有在线玩家</div>';
+                    }
 
-  if (players.length > 0) {
-    playerBox.style.display = "block";
+                } else {
+                    statusIndicator.style.background = '#F44336';
+                    statusText.innerText = '服务器离线';
+                    statusText.style.color = '#F44336';
+                    playerCount.innerText = '-';
+                    maxPlayers.innerText = '-';
+                    serverVersion.innerText = '-';
+                    playersContainer.innerHTML = '<div style="padding:20px; color:#777;">服务器离线</div>';
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                statusIndicator.style.background = '#F44336';
+                statusText.innerText = '状态获取失败';
+                playersContainer.innerHTML = '<div style="padding:20px; color:#777;">玩家数据加载失败</div>';
+            });
+    }
 
-    // 生成玩家头像+名字列表
-    playerBox.innerHTML = `
-      <b>在线玩家：</b><br>
-      <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
-        ${players.map(name => `
-          <div style="display:flex;align-items:center;gap:12px;">
-            <img src="https://mineskin.eu/helm/${name}/64.png"
-                 style="
-                   width:38px;
-                   height:38px;
-                   border-radius:50%;
-                   box-shadow:0 2px 6px rgba(0,0,0,0.3);
-                 ">
-            <span>${name}</span>
-          </div>
-        `).join("")}
-      </div>
-    `;
-  } else {
-    playerBox.style.display = "none";
-  }
-
-  time.innerHTML = `最后检测：${now}`;
-}
-
-// 初次加载
-updateMCStatus();
-
-// 自动刷新
-setInterval(updateMCStatus, 20000);
+    fetchServerStatus();
+    setInterval(fetchServerStatus, 30000);
+});
 </script>
