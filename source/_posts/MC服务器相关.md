@@ -60,12 +60,17 @@ tags:
 
 ## 📡 当前服务器状态（手动更新）
 
-```
-服务器状态：在线 ✔  
-整合包版本：Create Delight Remake  
-当前在线人数：X / 5  
-最近重启：2025-XX-XX  
-```
+
+<div id="mc-status" style="
+  padding:12px;
+  border-left:5px solid #4CAF50;
+  background:#f7f7f7;
+  margin-bottom:20px;
+">
+正在检测服务器状态……
+</div>
+
+
 
 ---
 
@@ -294,4 +299,41 @@ ElysiumAPI
 如需申请加入或反馈问题，可通过博客主页联系我。
 
 ---
+
+<script>
+async function updateMCStatus() {
+  const ip = "mc.4thjunji.cn";
+  const port = 25565; // 如非默认端口，请改成实际端口
+
+  const api = `https://api.mcsrvstat.us/2/${ip}:${port}`;
+  const res = await fetch(api);
+  const data = await res.json();
+  const box = document.getElementById("mc-status");
+
+  if (!data.online) {
+    box.innerHTML = `
+      <b>服务器状态：</b> 离线 ❌<br>
+      <b>检测时间：</b> ${new Date().toLocaleString()}
+    `;
+    box.style.borderLeftColor = "#f44336";
+    return;
+  }
+
+  box.innerHTML = `
+    <b>服务器状态：</b> 在线 ✔<br>
+    <b>MOTD：</b> ${data.motd?.clean?.join(" ") || "未知"}<br>
+    <b>版本：</b> ${data.version || "未知"}<br>
+    <b>在线人数：</b> ${data.players?.online || 0} / ${data.players?.max || 0}<br>
+    <b>检测时间：</b> ${new Date().toLocaleString()}
+  `;
+
+  box.style.borderLeftColor = "#4CAF50";
+}
+
+// 第一次加载时执行
+updateMCStatus();
+
+// 如需每 15 秒自动刷新，请取消下一行注释
+// setInterval(updateMCStatus, 15000);
+</script>
 
