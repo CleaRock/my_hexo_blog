@@ -1,0 +1,25 @@
+/* ========== 自定义首页标题样式 ========== */
+
+.custom-index-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 25px 40px;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  color: #fff;
+}
+
+.custom-index-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.custom-index-header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
