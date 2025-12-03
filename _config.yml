@@ -103,4 +103,4 @@ theme: butterfly
 deploy:
   type: git
   repo: git@github.com:CleaRock/my_hexo_blog.git
-  branch: main
+  branch: gh-pages
